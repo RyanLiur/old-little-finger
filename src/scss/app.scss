@@ -1,0 +1,10 @@
+// Entry point for scss
+
+
+//---------------------- sample Global ----------------------
+
+@import './module/variables';
+@import './module/common';
+
+@import './module/page/login';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';

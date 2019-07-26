@@ -1,0 +1,145 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  color: #616161;
+  font-family: 'Roboto', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Hyperlink */
+
+a {
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Input */
+
+input {
+  border: 1px solid #BDBDBD;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button, button {
+  align-items: center;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.button:hover, button:hover {
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+.button:disabled, button:disabled {
+  cursor: auto;
+  opacity: 0.5;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+.fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
+
+/* Top Bar */
+
+app-top-bar {
+  align-items: center;
+  background-color: #1976d2;
+  display: flex;
+  flex-direction: row;
+  height: 68px;
+  justify-content: space-between;
+  padding: 16px;
+  width: 100%;
+}
+
+app-top-bar h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Checkout Cart, Shipping Prices */
+
+.cart-item, .shipping-item {
+  background-color: #EEEEEE;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  max-width: 450px;
+  min-width: 400px;
+  padding: 16px 32px;
+  width: 100%;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
