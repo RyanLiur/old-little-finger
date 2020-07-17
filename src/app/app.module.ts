@@ -3,17 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaymentCardNumberPipe } from './payment-card-number.pipe';
 import { MetaService } from './core/service/meta.service';
+import { SysErrorComponent } from './error/sys-error/sys-error.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaymentCardNumberPipe
+    SysErrorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule,
   ],
   providers: [
     MetaService,

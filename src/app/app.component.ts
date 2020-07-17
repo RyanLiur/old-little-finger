@@ -7,7 +7,7 @@ import { Component, SimpleChanges, ChangeDetectorRef, OnChanges, OnInit } from '
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'anglr-little-finger';
+  title = 'LFinger';
 
   constructor(
     private readonly meta: MetaService,

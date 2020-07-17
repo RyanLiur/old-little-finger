@@ -1,0 +1,4 @@
+<p>customer-list works!</p>
+<form [formGroup]="paymentForm">
+  <input #ccNumber id="cc-number" formControlName="cardNumber" type="tel" title="Card number" placeholder="0000 0000 0000 0000" maxlength="19" [value]="ccNumber.value | paymentCardNumber" (input)="ccNumber.value=$event.target.value">
+</form>

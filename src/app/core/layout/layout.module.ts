@@ -1,0 +1,15 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { LayoutRoutingModule } from './layout-routing.module';
+import { HeadMainFootLayoutComponent } from './head-main-foot-layout/head-main-foot-layout.component';
+
+
+@NgModule({
+  declarations: [HeadMainFootLayoutComponent],
+  imports: [
+    CommonModule,
+    LayoutRoutingModule
+  ]
+})
+export class LayoutModule { }
